@@ -187,6 +187,9 @@
   .top-64 {
     top: calc(var(--spacing) * 64);
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
   .bottom-2\.5 {
     bottom: calc(var(--spacing) * 2.5);
   }
@@ -217,6 +220,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -229,8 +235,38 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
+  }
+  .w-3\/7 {
+    width: calc(3/7 * 100%);
+  }
+  .w-4\/5 {
+    width: calc(4/5 * 100%);
+  }
+  .w-5\/7 {
+    width: calc(5/7 * 100%);
+  }
+  .w-6\/1 {
+    width: calc(6/1 * 100%);
+  }
+  .w-6\/7 {
+    width: calc(6/7 * 100%);
+  }
+  .w-6\/8 {
+    width: calc(6/8 * 100%);
+  }
+  .w-6\/9 {
+    width: calc(6/9 * 100%);
+  }
+  .w-6\/10 {
+    width: calc(6/10 * 100%);
+  }
+  .w-9\/12 {
+    width: calc(9/12 * 100%);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -246,6 +282,9 @@
   }
   .max-w-72 {
     max-width: calc(var(--spacing) * 72);
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -274,14 +313,24 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-\[\#C1E36A\]\/20 {
     background-color: color-mix(in oklab, #C1E36A 20%, transparent);
@@ -342,6 +391,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -378,9 +430,21 @@
   .text-gray-950 {
     color: var(--color-gray-950);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .sm\:static {
     @media (width >= 40rem) {
       position: static;
+    }
+  }
+  .sm\:left-0 {
+    @media (width >= 40rem) {
+      left: calc(var(--spacing) * 0);
     }
   }
   .sm\:mx-0 {
@@ -428,9 +492,34 @@
       align-items: center;
     }
   }
+  .sm\:justify-around {
+    @media (width >= 40rem) {
+      justify-content: space-around;
+    }
+  }
+  .sm\:justify-baseline {
+    @media (width >= 40rem) {
+      justify-content: baseline;
+    }
+  }
   .sm\:justify-between {
     @media (width >= 40rem) {
       justify-content: space-between;
+    }
+  }
+  .sm\:justify-start {
+    @media (width >= 40rem) {
+      justify-content: flex-start;
+    }
+  }
+  .sm\:justify-items-normal {
+    @media (width >= 40rem) {
+      justify-items: normal;
+    }
+  }
+  .sm\:justify-items-start {
+    @media (width >= 40rem) {
+      justify-items: start;
     }
   }
   .sm\:gap-4 {
@@ -621,6 +710,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false;
@@ -667,6 +761,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -675,6 +774,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
@@ -685,6 +785,7 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
