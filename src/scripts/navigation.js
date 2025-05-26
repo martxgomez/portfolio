@@ -15,11 +15,11 @@ navLis.forEach((liElement) => {
   });
 });
 
+
 navMenu.addEventListener("animationend", (event) => {
   if (event.animationName !== "slide-out") return;
   navMenu.classList.add("hidden");
   navMenu.classList.remove("flex");
-  nav;
 });
 
 window.addEventListener("resize", () => {
