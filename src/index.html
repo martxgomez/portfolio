@@ -32,15 +32,16 @@
         </h1>
         <ul
           id="nav-menu"
-          class="absolute top-0 hidden flex-col h-dvh w-3/4 gap-10 p-10 text-2xl font-medium bg-[#d8eca8] sm:static sm:flex sm:h-auto sm:w-5/11 sm:flex-row sm:items-center sm:text-left sm:text-sm sm:justify-between sm:p-0 sm:bg-transparent"
+          class="absolute top-0 hidden flex-col h-dvh w-3/4 gap-10 p-10 text-2xl font-medium bg-[#d8eca8] sm:static sm:flex sm:h-auto sm:w-5/11 sm:flex-row sm:items-center sm:text-left sm:text-sm sm:justify-between sm:p-0 sm:bg-transparent "
         >
-          <li class="mx-auto text-2xl font-medium sm:mx-0">
+          <li class="mx-auto sm:hidden text-2xl font-medium sm:mx-0">
             &lt Marta Gómez /<span class="inline-block -ml-1">&gt;</span>
           </li>
           <li><a href="#about-me">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
-          <li class="sm:hidden ">
+          <li class="sm:hidden">
+            <button>
             <svg
               width="40px"
               height="40px"
@@ -53,10 +54,45 @@
                 fill="#0F0F0F"
               />
             </svg>
+            </button>
           </li>
         </ul>
       </nav>
     </header>
+    <section>
+      <article class="max-w-72 mx-auto sm:max-w-screen-lg flex flex-wrap items-center py-10 justify-between ">
+        <img
+          class="max-w-72 rounded-full mx-auto "
+          src="https://media.licdn.com/dms/image/v2/D4D03AQFPkA8hFqEm6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732480393150?e=1753920000&v=beta&t=z_bXszFkNhyJxIELatnFiQVHzM6OZOu7SNAP5wN6Rl0"
+          alt="Imagen de perfil de Marta"
+        />
+        <div class="mx-auto my-4 flex flex-col gap-10 p-5">
+          <h2 class="text-5xl font-black text-center sm:text-left ">¡Hola!</h2>
+          <p>
+            Soy Marta, desarrolladora fullstack con background en ingeniería y
+            diseño.
+          </p>
+          <ul class="flex gap-10">
+            <li >
+              <a 
+                target="_blank"
+                href="https://www.linkedin.com/in/martagomezmartinez/"
+                ><img 
+                  src="./assets/icons8-linkedin.svg"
+                  alt="Logo de LinkedIn"
+              /></a>
+            </li>
+            <li >
+              <a target="_blank" href="https://github.com/martxgomez"
+                ><img  
+                  src="./assets/icons8-github.svg"
+                  alt="Logo de GitHub"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
     <script src="./scripts/navigation.js"></script>
   </body>
 </html>
