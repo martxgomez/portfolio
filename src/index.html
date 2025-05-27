@@ -9,7 +9,9 @@
     class="font-jetbrains min-h-screen w-screen bg-gradient-to-b from-[#d8eca8] to-[#AE92B7] text-gray-950"
   >
     <header id="header">
-      <nav class="sticky top-0 flex h-16 items-center justify-between sm:px-10">
+      <nav
+        class="lg:-max-w-screen-lg sticky top-0 mx-auto flex h-16 items-center justify-between sm:max-w-screen-sm"
+      >
         <button id="menu-btn" class="absolute left-2 sm:hidden">
           <svg
             width="40px"
@@ -30,7 +32,6 @@
         <h1 class="mx-auto text-2xl font-medium sm:mx-0">
           &lt Marta Gómez /<span class="-ml-1 inline-block">&gt;</span>
         </h1>
-        ‰
         <ul
           id="nav-menu"
           class="absolute top-0 hidden h-dvh w-9/12 flex-col gap-10 bg-[#d8eca8] p-10 text-2xl font-medium sm:static sm:flex sm:h-auto sm:w-5/11 sm:flex-row sm:items-center sm:justify-between sm:bg-transparent sm:p-0 sm:text-left sm:text-sm"
@@ -60,9 +61,10 @@
         </ul>
       </nav>
     </header>
+
     <section>
       <article
-        class="mx-auto flex max-w-72 flex-wrap items-center justify-between gap-5 py-10 sm:max-w-screen-lg"
+        class="lg:-max-w-screen-lg mx-auto flex max-w-72 flex-wrap items-center justify-between gap-5 py-10 sm:max-w-screen-sm"
       >
         <img
           class="mx-auto max-w-72 rounded-full"
@@ -90,6 +92,88 @@
             </li>
           </ul>
         </div>
+      </article>
+    </section>
+
+    <section id="about-me">
+      <article
+        class="lg:-max-w-screen-lg mx-auto flex max-w-72 flex-col gap-10 py-5 sm:max-w-screen-sm"
+      >
+        <h3 class="text-left text-3xl font-black">Sobre mí</h3>
+
+        <article class="flex flex-col gap-5">
+          <p>
+            Mi nombre es Marta y soy desarrolladora Full Stack apasionada por
+            crear experiencias digitales que marquen la diferencia. Mi interés
+            en el desarrollo web comenzó cuando decidí complementar mi formación
+            en Ingeniería de diseño industrial con las tecnologías más avanzadas
+            para el desarrollo de aplicaciones web. Este camino me llevó a
+            estudiar en el bootcamp de Ironhack, donde profundicé en el
+            Fullstack MERN y desarrollé proyectos que combinan creatividad y
+            funcionalidad.
+          </p>
+          <p>
+            Actualmente, mi enfoque está en diseñar y construir productos
+            digitales optimizados, accesibles y centrados en la experiencia del
+            usuario, mientras sigo explorando nuevas herramientas y tendencias
+            del desarrollo web.
+          </p>
+        </article>
+
+        <article class="flex flex-col gap-5">
+          <!-- <div class="flex flex-col gap-4">
+            <h4 class="font-bold">🧠 Habilidades</h4>
+            <ul>
+              <li>▪️ Desarrollo Full Stack (Frontend y Backend)</li>
+              <li>▪️ Desarrollo centrado en el usuario</li>
+              <li>▪️ Resolución de problemas y optimización de procesos</li>
+              <li>▪️ Metodologías ágiles</li>
+              <li>▪️ Pensamiento creativo y crítico</li>
+              <li>▪️ Trabajo en equipo y gestión de proyectos</li>
+            </ul>
+          </div> -->
+          <div class="flex flex-col gap-2">
+            <h4 class="font-bold">🚀 Tecnologías</h4>
+
+            <p>
+              📌 JavaScript (ES6+), Node.js, React.js, Express.js, MongoDB,
+              HTML, CSS, Vite
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 class="font-bold">⚙️ Herramientas</h4>
+            <p>📌 Git, GitHub, Cypress, Jasmine, Netlify, Vercel</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-10"
+        >
+          <div class="flex flex-col gap-4 sm:w-4/5">
+            <h4 class="font-bold">👩🏻‍💻 Intereses Personales</h4>
+            <ul class="flex flex-col gap-5">
+              <li>
+                ✨ En mi tiempo libre, disfruto trabajando en proyectos que
+                combinen diseño y funcionalidad, y conectando con la comunidad
+                tech para mantenerme actualizada en este apasionante mundo del
+                desarrollo.
+              </li>
+              <li>
+                ✨ Además, soy una amante del diseño, me encanta pasar tiempo
+                con mi perro 🐾 y descubrir nuevas culturas viajando.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mx-auto flex flex-col gap-2">
+            <img
+              class="w-50 rounded-full"
+              src="./assets/Panko_Marta.png"
+              alt="Panko y yo en Copenhague"
+            />
+            <p class="mx-auto text-center text-xs">Panko y yo en Copenhague</p>
+          </div>
+        </article>
       </article>
     </section>
     <script src="./scripts/navigation.js"></script>
