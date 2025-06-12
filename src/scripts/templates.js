@@ -1,4 +1,5 @@
-import { projects } from "./data.js";
+import { projects, reviews } from "./data.js";
+
 
 const templateProject = document.querySelector(
   '[data-template="project-card"]',
@@ -24,4 +25,25 @@ projects.forEach((project) => {
   link.href = project.link;
 
   projectsUl.appendChild(card)
+});
+
+const templateReview = document.querySelector(
+  '[data-template="review-card"]',
+);
+const reviewsUl=document.querySelector("#reviews ul")
+
+reviews.forEach((review) => {
+  const card = templateReview.content.cloneNode(true);
+  const image = card.querySelector("img");
+  const name = card.querySelector("p");
+  const reviewText = card.querySelector("blockquote");
+  
+
+  image.src = review.image.src;
+  image.alt = review.image.alt;
+
+  name.textContent = review.name;
+  reviewText.textContent = review.reviewText;
+  
+  reviewsUl.appendChild(card)
 });

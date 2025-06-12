@@ -241,6 +241,9 @@
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -249,6 +252,9 @@
   }
   .-ml-1 {
     margin-left: calc(var(--spacing) * -1);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
