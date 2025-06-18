@@ -27,6 +27,8 @@ projects.forEach((project) => {
   projectsUl.appendChild(card)
 });
 
+
+// REVIEWS TEMPLATE
 const templateReview = document.querySelector(
   '[data-template="review-card"]',
 );
