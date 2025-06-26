@@ -6,9 +6,11 @@ export const projects = [
       alt: "Imagen de Nexo",
     },
     description:
-      "Con Nexo puedes organizar planes, invitar a quien quieras y decidir si son públicos o privados.",
+      "Con Nexo puedes crear, organizar planes e invitar a quien quieras. Además, puedes decidir si son públicos o privados.",
     link: "https://github.com/martxgomez/project-3-client",
+    web: "https://nexo-plans.netlify.app/#/",
     tech: "React | REST API | ExpressJS | MongoDB",
+    date: "Febrero-Marzo 2025",
   },
   {
     title: "Routify",
@@ -19,7 +21,9 @@ export const projects = [
     description:
       "Con Routify puedes descubrir, crear y guardar planes de viaje según tus intereses en tu perfil personal.",
     link: "https://github.com/martxgomez/travels-app",
+    web: "https://travelers-app.netlify.app/",
     tech: "React | SQL | HTML5 | Javascript | CSS",
+    date: "Enero - Febrero 2025",
   },
   {
     title: "Barcelona's Experience",
@@ -30,7 +34,9 @@ export const projects = [
     description:
       "En este juego eres una oficinista que esquiva guiris, cucarachas y un carterista para llegar a tiempo al trabajo.",
     link: "https://github.com/martxgomez/Barcelona-experience",
+    web: "https://martxgomez.github.io/Barcelona-experience/",
     tech: "HTML5 | Javascript | CSS | DOM | OOP",
+    date: "Octubre-Noviembre 2024",
   },
 ];
 
