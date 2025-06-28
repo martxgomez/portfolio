@@ -21,7 +21,8 @@ projects.forEach((project) => {
 
   title.textContent = project.title;
   date.textContent = project.date;
-  description.textContent = project.description;
+  description.innerHTML = project.description
+    .replace(/\n\n/g, "<br><br>")
   tech.insertAdjacentHTML("beforeend", project.tech);
 
   link.href = project.link;

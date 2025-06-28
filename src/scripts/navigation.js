@@ -33,3 +33,4 @@ window.addEventListener("resize", () => {
 mainTitle.addEventListener("click", ()=>{
   window.scrollTo({top:0,behavior:"smooth"})
 })
+

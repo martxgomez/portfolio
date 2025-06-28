@@ -6,10 +6,10 @@ export const projects = [
       alt: "Imagen de Nexo",
     },
     description:
-      "Con Nexo puedes crear, organizar planes e invitar a quien quieras. Además, puedes decidir si son públicos o privados.",
+      "Nexo está diseñada para ayudarte a crear, organizar y compartir planes con amigos ¿Quieres organizar una salida, una cena o cualquier otro evento? Con Nexo puedes crear planes personalizados, invitar amigos y decidir si quieres que sean públicos o privados 🔐 \n\n Nexo fue mi primera aplicación full-stack con un frontend en React (SPA) y un backend en ExpressJS con MongoDB, cumpliendo con todos los requisitos técnicos solicitados. La aplicación incluye autenticación de usuarios, operaciones CRUD, múltiples modelos de base de datos y un diseño mobile-first.",
     link: "https://github.com/martxgomez/project-3-client",
     web: "https://nexo-plans.netlify.app/#/",
-    tech: "React | REST API | ExpressJS | MongoDB",
+    tech: "React | REST API | ExpressJS | MongoDB | NodeJS",
     date: "Febrero-Marzo 2025",
   },
   {
@@ -19,10 +19,10 @@ export const projects = [
       alt: "Imagen de Routify",
     },
     description:
-      "Con Routify puedes descubrir, crear y guardar planes de viaje según tus intereses en tu perfil personal.",
+      "Routify ayuda a los usuarios a descubrir planes de viaje, filtrarlos según sus intereses y guardar sus favoritos en su perfil personal. Además, permite a los usuarios crear y gestionar sus propios planes de viaje ✈️ \n\nSe trata de una Single Page Application (SPA) con React que consume una API con Supabase para realizar operaciones CRUD. La aplicación está desplegada en línea a través de Netlify, es accesible públicamente y cuenta con múltiples vistas para una experiencia de usuario interactiva.",
     link: "https://github.com/martxgomez/travels-app",
     web: "https://travelers-app.netlify.app/",
-    tech: "React | SQL | HTML5 | Javascript | CSS",
+    tech: "React | SQL | HTML5 | Javascript | CSS | NodeJS | ExpressJS",
     date: "Enero - Febrero 2025",
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
       alt: "Imagen de Barcelona's Experience",
     },
     description:
-      "En este juego eres una oficinista que esquiva guiris, cucarachas y un carterista para llegar a tiempo al trabajo.",
+      "Se trata de mi primer videojuego, en el que te pondrás en la piel de una oficinista que tiene que llegar al trabajo en metro, pero... ¡CUIDADO! El metro de Barcelona esconde desafíos y sorpresas ¿Serás capaz de esquivar los peligros y llegar a tiempo? ⏳ \n\nEl objetivo era desarrollar un juego renderizado en el navegador con lógica de victoria/derrota, feedback al jugador y una estructura organizada siguiendo principios de programación orientada a objetos (OOP) y buenas prácticas (KISS, DRY).",
     link: "https://github.com/martxgomez/Barcelona-experience",
     web: "https://martxgomez.github.io/Barcelona-experience/",
     tech: "HTML5 | Javascript | CSS | DOM | OOP",
