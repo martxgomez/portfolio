@@ -76,7 +76,7 @@
     <!-- HERO SECTION -->
     <section
       id="hero"
-      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
+      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7] -mb-px"
     >
       <article
         class="mx-auto flex w-full max-w-80 flex-wrap items-center justify-center gap-3 pb-36 sm:max-w-screen-sm lg:max-w-screen-lg"
@@ -169,7 +169,7 @@
     <!-- PROJECTS -->
     <section
       id="projects"
-      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#d8eca8] py-5"
+      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#d8eca8] py-5 -mb-px"
     >
       <div class="mx-auto max-w-80 sm:max-w-screen-sm lg:max-w-screen-lg">
         <h3
@@ -247,7 +247,7 @@
     <!-- ABOUT ME -->
     <section
       id="about-me"
-      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
+      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7] -mb-px"
     >
       <article
         class="mx-auto flex max-w-80 flex-col sm:max-w-screen-sm lg:max-w-screen-lg"
@@ -323,7 +323,7 @@
 
         <div class="mx-auto flex flex-col gap-2 pb-5">
           <img
-            class="w-50 rounded-full border-2 border-[#AE92B7]/70 "
+            class="w-50 rounded-full border-2 border-[#AE92B7]/70"
             src="./assets/Panko_Marta.png"
             alt="Panko y yo en Copenhague"
           />
@@ -336,7 +336,7 @@
 
     <section
       id="reviews"
-      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#AE92B7] py-5"
+      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#AE92B7] py-5 -mb-px"
     >
       <div class="mx-auto max-w-80 sm:max-w-screen-sm lg:max-w-screen-lg">
         <h3
@@ -367,6 +367,83 @@
         </ul>
       </div>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="scroll-mt-16 bg-[#AE92B7] py-5">
+      <div class="mx-auto max-w-80 sm:max-w-screen-sm lg:max-w-screen-lg">
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-10 w-10"
+            src="./assets/contactme_icon.svg"
+            alt="Icono de contacto"
+          />Contacto
+        </h3>
+
+        <ul class="mx-auto flex flex-col gap-3 py-5 sm:mx-0 sm:flex-row">
+          <li class="mx-auto">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="https://www.linkedin.com/in/martagomezmartinez/"
+              >
+                LinkedIn
+                <img
+                  src="./assets/linkedin-icon.svg"
+                  alt="Logo de LinkedIn"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+          <li class="mx-auto">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="https://github.com/martxgomez"
+              >
+                GitHub
+
+                <img
+                  src="./assets/github-icon.svg"
+                  alt="Logo de GitHub"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+          <li class="mx-auto py-0.5">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="mailto:martagomez.code@gmail.com"
+              >
+                Email
+
+                <img
+                  src="./assets/mail-icon.svg"
+                  alt="Logo de GitHub"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+<footer id="footer" class="scroll-mt-16 bg-[#AE92B7] py-5 text-xs border-t-1 text-center">
+© Todos los derechos reservados
+</footer>
     <script src="./scripts/navigation.js"></script>
     <script type="module" src="./scripts/templates.js"></script>
   </body>

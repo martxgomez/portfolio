@@ -9,8 +9,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-950: oklch(13% 0.028 261.692);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-sm: 40rem;
@@ -263,6 +265,9 @@
   .mt-auto {
     margin-top: auto;
   }
+  .-mb-px {
+    margin-bottom: -1px;
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -294,6 +299,9 @@
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -348,6 +356,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-9\/1 {
     width: calc(9/1 * 100%);
@@ -512,6 +523,18 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-1 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
   .border-\[\#8a6696\] {
     border-color: #8a6696;
   }
@@ -554,11 +577,29 @@
   .border-\[\#a485ae\] {
     border-color: #a485ae;
   }
+  .border-slate-950 {
+    border-color: var(--color-slate-950);
+  }
+  .border-t-slate-950 {
+    border-top-color: var(--color-slate-950);
+  }
+  .border-b-slate-950 {
+    border-bottom-color: var(--color-slate-950);
+  }
   .bg-\[\#\#C1D496\] {
     background-color: ##C1D496;
   }
   .bg-\[\#8EA360\] {
     background-color: #8EA360;
+  }
+  .bg-\[\#966fa4\] {
+    background-color: #966fa4;
+  }
+  .bg-\[\#9778a1\] {
+    background-color: #9778a1;
+  }
+  .bg-\[\#673889\] {
+    background-color: #673889;
   }
   .bg-\[\#889469\] {
     background-color: #889469;
@@ -704,6 +745,9 @@
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
   }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -712,6 +756,12 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  .py-50 {
+    padding-block: calc(var(--spacing) * 50);
   }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
@@ -884,6 +934,9 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .outline-black {
+    outline-color: var(--color-black);
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
