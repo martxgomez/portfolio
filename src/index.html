@@ -1,18 +1,23 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body
-    class="font-jetbrains min-h-screen w-full overflow-x-hidden bg-gradient-to-b from-[#d8eca8] to-[#AE92B7] text-gray-950"
+    class="font-montserrat min-h-screen w-full overflow-x-hidden text-gray-950"
+    style="overflow-x: hidden; max-width: 100vw"
   >
-    <header id="header" class="sticky top-0 z-50">
+    <!-- NAVBAR-->
+    <header
+      id="header"
+      class="sticky top-0 z-50 mx-auto h-16 w-full bg-[#d8eca8]"
+    >
       <nav
-        class="mx-auto flex h-16 w-full items-center justify-between bg-[#d8eca8]/90 sm:max-w-screen-sm lg:max-w-screen-lg"
+        class="relative mx-auto flex h-16 w-dvw items-center sm:max-w-screen-sm lg:max-w-screen-sm"
       >
-        <button id="menu-btn" class="absolute left-2 sm:hidden">
+        <button id="menu-btn" class="absolute left-4 sm:hidden">
           <svg
             width="40px"
             height="40px"
@@ -29,99 +34,292 @@
             />
           </svg>
         </button>
-        <h1 class="mx-auto text-2xl font-medium sm:mx-0">
-          &lt Marta Gómez /<span class="-ml-1 inline-block">&gt;</span>
-        </h1>
-        <ul
-          id="nav-menu"
-          class="absolute top-0 hidden h-dvh w-9/12 flex-col gap-10 bg-[#d8eca8] p-10 text-2xl font-medium sm:static sm:flex sm:h-auto sm:w-5/11 sm:flex-row sm:items-center sm:justify-between sm:bg-transparent sm:p-0 sm:text-left sm:text-sm"
+
+        <div
+          class="mx-auto flex h-16 w-full items-center sm:max-w-screen-sm sm:justify-between lg:max-w-screen-sm"
         >
-          <li class="mx-auto text-2xl font-medium sm:mx-0 sm:hidden">
-            &lt Marta Gómez /<span class="-ml-1 inline-block">&gt;</span>
-          </li>
-          <li><a href="#about-me">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
-          <li class="sm:hidden">
-            <button>
-              <svg
-                width="40px"
-                height="40px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
-                  fill="#0F0F0F"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
+          <h1
+            id="main-title"
+            class="mx-auto cursor-pointer text-2xl font-semibold sm:m-0"
+          >
+            Marta Gómez
+          </h1>
+
+          <ul
+            id="nav-menu"
+            class="absolute top-0 hidden h-dvh w-9/10 flex-col gap-10 bg-[#d8eca8] px-15 py-10 text-xl font-medium sm:static sm:flex sm:h-fit sm:w-fit sm:flex-row sm:bg-transparent sm:p-0 sm:text-sm"
+          >
+            <li class="mx-auto text-2xl font-semibold sm:mx-0 sm:hidden">
+              Marta Gómez
+            </li>
+            <span></span>
+            <li><a href="#projects">Proyectos</a></li>
+            <li class="whitespace-nowrap"><a href="#about-me">Sobre mí</a></li>
+            <li><a href="#reviews">Reseñas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+
+            <li class="sm:hidden">
+              <div class="fixed right-20 bottom-10 sm:hidden">
+                <button>
+                  <svg
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                      fill="#0F0F0F"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <section id="hero">
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="-mb-px flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end  justify-center bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
+    >
       <article
-        class="mx-auto flex max-w-72 flex-wrap items-center justify-between gap-5 py-10 sm:max-w-screen-sm lg:max-w-screen-lg"
+        class="mx-auto flex w-full max-w-80 flex-wrap items-center justify-center gap-3 pb-36 sm:max-w-screen-sm sm:justify-start lg:max-w-screen-sm"
       >
         <img
-          class="mx-auto max-w-72 rounded-full"
-          src="https://media.licdn.com/dms/image/v2/D4D03AQFPkA8hFqEm6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732480393150?e=1753920000&v=beta&t=z_bXszFkNhyJxIELatnFiQVHzM6OZOu7SNAP5wN6Rl0"
+          class="mt-20 max-w-32 items-center rounded-full sm:mx-0"
+          src="./assets/Marta.png"
           alt="Imagen de perfil de Marta"
         />
-        <div class="mx-auto my-4 flex flex-col gap-10">
-          <h2 class="text-center text-5xl font-black sm:text-left">¡Hola!</h2>
-          <p>
-            Soy Marta, desarrolladora fullstack con background en ingeniería y
-            diseño.
+        <div class="my-2 flex flex-col gap-3 sm:items-start">
+          <h2 class="text-center text-4xl font-semibold sm:text-left">
+            ¡Hola!
+          </h2>
+          <p class="text-center text-sm sm:text-left">
+            Soy Marta, desarrolladora fullstack con background en Ingeniería de
+            diseño y experiencia en desarrollo de productos.
           </p>
-          <ul class="mx-auto flex gap-5 sm:mx-0">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/martagomezmartinez/"
-                ><img src="./assets/icons8-linkedin.svg" alt="Logo de LinkedIn"
-              /></a>
+
+          <ul class="mx-auto flex flex-col gap-3 sm:mx-0 sm:flex-row">
+            <li class="mx-auto">
+              <button
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+              >
+                <a
+                  class="mx-auto flex items-center gap-1 text-sm"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/martagomezmartinez/"
+                >
+                  LinkedIn
+                  <img
+                    src="./assets/linkedin-icon.svg"
+                    alt="Logo de LinkedIn"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </button>
             </li>
-            <li>
-              <a target="_blank" href="https://github.com/martxgomez"
-                ><img src="./assets/icons8-github.svg" alt="Logo de GitHub"
-              /></a>
+            <li class="mx-auto">
+              <button
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+              >
+                <a
+                  class="mx-auto flex items-center gap-1 text-sm"
+                  target="_blank"
+                  href="https://github.com/martxgomez"
+                >
+                  GitHub
+
+                  <img
+                    src="./assets/github-icon.svg"
+                    alt="Logo de GitHub"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </button>
+            </li>
+            <li class="mx-auto py-0.5">
+              <button
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+              >
+                <a
+                  class="mx-auto flex items-center gap-1 text-sm"
+                  target="_blank"
+                  href="mailto:martagomez.code@gmail.com"
+                >
+                  Email
+
+                  <img
+                    src="./assets/mail-icon.svg"
+                    alt="Logo de GitHub"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </button>
             </li>
           </ul>
         </div>
       </article>
+      <button
+        class="absolute bottom-10 mx-auto items-center scroll-smooth rounded-full bg-white/20 px-1.5 pt-1.5 pb-1 shadow-sm"
+      >
+        <a href="#projects">
+          <img
+            src="./assets/down-arrow-icon.svg"
+            alt="Logo de GitHub"
+            class="h-6 w-6"
+        /></a>
+      </button>
     </section>
 
-    <section id="about-me">
-      <article
-        class="mx-auto flex max-w-72 flex-col gap-10 py-5 sm:max-w-screen-sm lg:max-w-screen-lg"
+    <!-- PROJECTS -->
+    <section
+      id="projects"
+      class="-mb-px min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#d8eca8] py-5"
+    >
+      <div
+        class="mx-auto max-w-80 sm:h-fit sm:max-w-screen-sm sm:pt-10 lg:max-w-screen-sm"
       >
-        <h3 class="text-left text-3xl font-black">Sobre mí</h3>
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-12 w-12"
+            src="./assets/projects_icon.svg"
+            alt="Icono de proyectos"
+          />Proyectos
+        </h3>
 
-        <article class="flex flex-col gap-5">
-          <p>
-            Mi nombre es Marta y soy desarrolladora Full Stack apasionada por
-            crear experiencias digitales que marquen la diferencia. Mi interés
-            en el desarrollo web comenzó cuando decidí complementar mi formación
-            en Ingeniería de diseño industrial con las tecnologías más avanzadas
-            para el desarrollo de aplicaciones web. Este camino me llevó a
-            estudiar en el bootcamp de Ironhack, donde profundicé en el
-            Fullstack MERN y desarrollé proyectos que combinan creatividad y
-            funcionalidad.
-          </p>
-          <p>
-            Actualmente, mi enfoque está en diseñar y construir productos
-            digitales optimizados, accesibles y centrados en la experiencia del
-            usuario, mientras sigo explorando nuevas herramientas y tendencias
-            del desarrollo web.
-          </p>
+        <ul class="flex flex-wrap justify-between gap-10 py-5">
+          <template data-template="project-card">
+            <li
+              class="h-fit w-full overflow-hidden rounded-2xl border-2 border-[#AE92B7]/30 bg-[#E8F5D0] p-2 shadow-lg shadow-[#AE92B7]/20 sm:w-fit"
+            >
+              <img class="h-2/5 w-full rounded-xl object-cover" src="" alt="" />
+              <div class="flex h-3/5 flex-col p-2.5">
+                <h4 class="text-lg font-medium"></h4>
+                <h5 class="pb-2.5 text-sm font-normal"></h5>
+                <p></p>
+
+                <p class="py-5">
+                  <span class="font-bold">Tech:</span>
+                </p>
+
+                <ul class="flex flex-row">
+                  <li class="mx-auto">
+                    <button
+                      class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                    >
+                      <a
+                        class="mx-auto flex items-center gap-1 text-sm"
+                        href=""
+                        target="_blank"
+                      >
+                        Ver repo
+
+                        <img
+                          src="./assets/github-icon.svg"
+                          alt="Logo de GitHub"
+                          class="h-6 w-6"
+                        />
+                      </a>
+                    </button>
+                  </li>
+                  <li class="mx-auto">
+                    <button
+                      class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                    >
+                      <a
+                        class="mx-auto flex items-center gap-1 text-sm"
+                        href=""
+                        target="_blank"
+                      >
+                        Ver proyecto
+
+                        <img
+                          src="./assets/visit_project_icon.svg"
+                          alt="Logo de GitHub"
+                          class="h-6 w-6"
+                        />
+                      </a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section
+      id="about-me"
+      class="-mb-px flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7] sm:min-h-fit"
+    >
+      <article
+        class="mx-auto flex max-w-80 flex-col sm:max-w-screen-sm sm:pt-10 lg:max-w-screen-sm"
+      >
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-10 w-10"
+            src="./assets/aboutme_icon.svg"
+            alt="Icono sobre mí"
+          />Sobre mí
+        </h3>
+
+        <article class="flex flex-col gap-5 py-5 sm:flex-row">
+          <div class="flex flex-col gap-10 sm:w-2/3">
+            <p>
+              Mi nombre es Marta y soy desarrolladora Full Stack apasionada por
+              crear
+              <span class="font-medium text-[#673889]"
+                >experiencias digitales</span
+              >
+              que combinan funcionalidad y diseño. Mi formación en Ingeniería de
+              Diseño Industrial me impulsó a explorar el desarrollo web, donde
+              encontré la perfecta unión entre
+              <span class="font-medium text-[#673889]"
+                >creatividad y tecnología.</span
+              >
+            </p>
+            <p>
+              Me especializo en construir aplicaciones
+              <span class="font-medium text-[#673889]"
+                >optimizadas, accesibles y centradas en el usuario.</span
+              >
+              Disfruto aprendiendo constantemente, integrando nuevas
+              herramientas y tendencias para desarrollar soluciones innovadoras
+              y con impacto.
+            </p>
+            <p>
+              Soy una apasionada del desarrollo con alma creativa. Cuando no
+              estoy programando, me encontrarás explorando nuevas tecnologías,
+              disfrutando de los animales (especialmente viajando con mi perro!)
+              y aplicando mi
+              <span class="font-medium text-[#673889]">enfoque organizado</span>
+              tanto en mi vida como en mis proyectos.
+            </p>
+          </div>
+          <div class="mx-auto flex flex-col gap-2 pb-5 sm:my-auto">
+            <img
+              class="w-50 rounded-full border-2 border-[#AE92B7]/70"
+              src="./assets/Panko_Marta.png"
+              alt="Panko y yo en Copenhague"
+            />
+            <p class="mx-auto text-center text-xs">Panko y yo en Copenhague</p>
+          </div>
         </article>
+      </article>
 
-        <article class="flex flex-col gap-5">
-          <!-- <div class="flex flex-col gap-4">
+      <!-- SKILLS
+           <article class="flex flex-col gap-5">
+          <div class="flex flex-col gap-4">
             <h4 class="font-bold">🧠 Habilidades</h4>
             <ul>
               <li>▪️ Desarrollo Full Stack (Frontend y Backend)</li>
@@ -132,7 +330,7 @@
               <li>▪️ Trabajo en equipo y gestión de proyectos</li>
             </ul>
           </div> -->
-          <div class="flex flex-col gap-2">
+      <!-- <div class="flex flex-col gap-2">
             <h4 class="font-bold">🚀 Tecnologías</h4>
 
             <p>
@@ -144,100 +342,132 @@
             <h4 class="font-bold">⚙️ Herramientas</h4>
             <p>📌 Git, GitHub, Cypress, Jasmine, Netlify, Vercel</p>
           </div>
-        </article>
+        </article> -->
+    </section>
 
-        <article
-          class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-10"
+    <!-- REVIEWS SECTION -->
+
+    <section
+      id="reviews"
+      class="-mb-px min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#AE92B7] py-5"
+    >
+      <div
+        class="mx-auto max-w-80 sm:max-w-screen-sm sm:pt-10 lg:max-w-screen-sm"
+      >
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
         >
-          <div class="flex flex-col gap-4 sm:w-4/5">
-            <h4 class="font-bold">👩🏻‍💻 Intereses Personales</h4>
-            <ul class="flex flex-col gap-5">
-              <li>
-                ✨ En mi tiempo libre, disfruto trabajando en proyectos que
-                combinen diseño y funcionalidad, y conectando con la comunidad
-                tech para mantenerme actualizada en este apasionante mundo del
-                desarrollo.
-              </li>
-              <li>
-                ✨ Además, soy una amante del diseño, me encanta pasar tiempo
-                con mi perro 🐾 y descubrir nuevas culturas viajando.
-              </li>
-            </ul>
-          </div>
-
-          <div class="mx-auto flex flex-col gap-2">
-            <img
-              class="w-50 rounded-full"
-              src="./assets/Panko_Marta.png"
-              alt="Panko y yo en Copenhague"
-            />
-            <p class="mx-auto text-center text-xs">Panko y yo en Copenhague</p>
-          </div>
-        </article>
-      </article>
-    </section>
-
-    <section id="projects" class="py-10">
-      <div class="mx-auto max-w-72 sm:max-w-screen-sm lg:max-w-screen-lg">
-        <h3 class="text-left text-3xl font-black">Proyectos</h3>
-        <ul class="flex flex-wrap justify-between gap-10 py-5">
-          <template data-template="project-card">
-            <li class="h-100 w-72 overflow-hidden rounded-xl bg-[#d8eca8]">
-              <img class="h-1/3 w-full object-cover" src="" alt="" />
-              <div class="flex h-2/3 flex-col justify-between p-2.5">
-                <h4 class="text-lg font-bold"></h4>
-                <p></p>
-
-                <p>
-                  <span class="font-bold">Tech:</span>
-                </p>
-                <a href="" target="_blank">
-                  <button
-                    class="flex w-32 justify-center gap-2 rounded-2xl bg-[#AE92B7] py-2 transition-colors duration-300 hover:scale-105 hover:bg-[#cab1d1] focus:bg-[#9870a3] focus:text-white"
-                  >
-                    <span>Visitar</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 48 48"
-                      width="20px"
-                      height="20px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z"
-                      />
-                    </svg>
-                  </button>
-                </a>
-              </div>
-            </li>
-          </template>
-        </ul>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <div class="mx-auto max-w-72 sm:max-w-screen-sm lg:max-w-screen-lg">
-        <h3 class="text-left text-3xl font-black">Reseñas</h3>
+          <img
+            class="h-10 w-10"
+            src="./assets/reviews_icon.svg"
+            alt="Icono de proyectos"
+          />Reseñas
+        </h3>
         <ul>
           <template data-template="review-card">
             <li
-              class="mt-5 flex flex-col gap-4 overflow-hidden rounded-xl bg-[#d8eca8] p-4 sm:flex-row"
+              class="mt-5 flex flex-col gap-4 overflow-hidden rounded-xl bg-white/50 p-4 sm:flex-row"
             >
               <img
-                class="mx-auto size-28 rounded-full sm:mx-0"
+                class="mx-auto size-28 rounded-full border-2 border-[#AE92B7]/70 object-cover shadow-md sm:mx-0"
                 src=""
                 alt=""
               />
               <div>
                 <blockquote class="mb-4 italic"></blockquote>
-                <p></p>
+                <p class="font-medium"></p>
               </div>
             </li>
           </template>
         </ul>
       </div>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="scroll-mt-16 bg-[#AE92B7] py-5">
+      <div
+        class="mx-auto max-w-80 sm:max-w-screen-sm sm:pt-10 lg:max-w-screen-sm"
+      >
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-10 w-10"
+            src="./assets/contactme_icon.svg"
+            alt="Icono de contacto"
+          />Contacto
+        </h3>
+
+        <ul class="mx-auto flex flex-col gap-3 py-5 sm:mx-0 sm:flex-row sm:py-10">
+          <li class="mx-auto">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="https://www.linkedin.com/in/martagomezmartinez/"
+              >
+                LinkedIn
+                <img
+                  src="./assets/linkedin-icon.svg"
+                  alt="Logo de LinkedIn"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+          <li class="mx-auto">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="https://github.com/martxgomez"
+              >
+                GitHub
+
+                <img
+                  src="./assets/github-icon.svg"
+                  alt="Logo de GitHub"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+          <li class="mx-auto py-0.5">
+            <button
+              class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#966fa4] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+            >
+              <a
+                class="mx-auto flex items-center gap-1 text-sm"
+                target="_blank"
+                href="mailto:martagomez.code@gmail.com"
+              >
+                Email
+
+                <img
+                  src="./assets/mail-icon.svg"
+                  alt="Logo de GitHub"
+                  class="h-6 w-6"
+                />
+              </a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      id="footer"
+      class="scroll-mt-16 border-t-1 bg-[#AE92B7] py-5 text-center text-xs"
+    >
+      © Todos los derechos reservados
+    </footer>
+
+    <!-- SCRIPTS -->
     <script src="./scripts/navigation.js"></script>
     <script type="module" src="./scripts/templates.js"></script>
   </body>
