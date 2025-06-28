@@ -190,7 +190,7 @@
               <img class="h-1/3 w-full rounded-xl object-cover" src="" alt="" />
               <div class="flex h-2/3 flex-col p-2.5">
                 <h4 class="text-lg font-medium"></h4>
-                <h5 class="text-sm font-normal"></h5>
+                <h5 class="pb-2.5 text-sm font-normal"></h5>
                 <p></p>
 
                 <p class="py-5">
@@ -245,34 +245,57 @@
     </section>
 
     <!-- ABOUT ME -->
-    <section id="about-me" class="scroll-mt-16 py-5">
+    <section
+      id="about-me"
+      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
+    >
       <article
-        class="mx-auto flex max-w-72 flex-col gap-10 py-5 sm:max-w-screen-sm lg:max-w-screen-lg"
+        class="mx-auto flex max-w-80 flex-col sm:max-w-screen-sm lg:max-w-screen-lg"
       >
-        <h3 class="text-left text-3xl font-black">Sobre mí</h3>
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-10 w-10"
+            src="./assets/aboutme_icon.svg"
+            alt="Icono sobre mí"
+          />Sobre mí
+        </h3>
 
-        <article class="flex flex-col gap-5">
+        <article class="flex flex-col gap-5 py-5">
           <p>
             Mi nombre es Marta y soy desarrolladora Full Stack apasionada por
-            crear experiencias digitales que marquen la diferencia. Mi interés
-            en el desarrollo web comenzó cuando decidí complementar mi formación
-            en Ingeniería de diseño industrial con las tecnologías más avanzadas
-            para el desarrollo de aplicaciones web. Este camino me llevó a
-            estudiar en el bootcamp de Ironhack, donde profundicé en el
-            Fullstack MERN y desarrollé proyectos que combinan creatividad y
-            funcionalidad.
+            crear
+            <span class="font-medium text-[#673889]"
+              >experiencias digitales</span
+            >
+            que combinan funcionalidad y diseño. Mi formación en Ingeniería de
+            Diseño Industrial me impulsó a explorar el desarrollo web, donde
+            encontré la perfecta unión entre
+            <span class="font-medium text-[#673889]"
+              >creatividad y tecnología.</span
+            >
           </p>
           <p>
-            Actualmente, mi enfoque está en diseñar y construir productos
-            digitales optimizados, accesibles y centrados en la experiencia del
-            usuario, mientras sigo explorando nuevas herramientas y tendencias
-            del desarrollo web.
+            Me especializo en construir aplicaciones
+            <span class="font-medium text-[#673889]"
+              >optimizadas, accesibles y centradas en el usuario.</span
+            >
+            Disfruto aprendiendo constantemente, integrando nuevas herramientas
+            y tendencias para desarrollar soluciones innovadoras y con impacto.
+          </p>
+          <p>
+            Soy una apasionada del desarrollo con alma creativa. Cuando no estoy
+            programando, me encontrarás explorando nuevas tecnologías,
+            disfrutando de los animales (especialmente viajando con mi perro!) y
+            aplicando mi
+            <span class="font-medium text-[#673889]">enfoque organizado</span>
+            tanto en mi vida como en mis proyectos.
           </p>
         </article>
 
-        <article class="flex flex-col gap-5">
-          <!-- SKILLS
-          
+        <!-- SKILLS
+           <article class="flex flex-col gap-5">
           <div class="flex flex-col gap-4">
             <h4 class="font-bold">🧠 Habilidades</h4>
             <ul>
@@ -284,7 +307,7 @@
               <li>▪️ Trabajo en equipo y gestión de proyectos</li>
             </ul>
           </div> -->
-          <div class="flex flex-col gap-2">
+        <!-- <div class="flex flex-col gap-2">
             <h4 class="font-bold">🚀 Tecnologías</h4>
 
             <p>
@@ -296,53 +319,48 @@
             <h4 class="font-bold">⚙️ Herramientas</h4>
             <p>📌 Git, GitHub, Cypress, Jasmine, Netlify, Vercel</p>
           </div>
-        </article>
+        </article> -->
 
-        <article
-          class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-10"
-        >
-          <div class="flex flex-col gap-4 sm:w-4/5">
-            <h4 class="font-bold">👩🏻‍💻 Intereses Personales</h4>
-            <ul class="flex flex-col gap-5">
-              <li>
-                ✨ En mi tiempo libre, disfruto trabajando en proyectos que
-                combinen diseño y funcionalidad, y conectando con la comunidad
-                tech para mantenerme actualizada en este apasionante mundo del
-                desarrollo.
-              </li>
-              <li>
-                ✨ Además, soy una amante del diseño, me encanta pasar tiempo
-                con mi perro 🐾 y descubrir nuevas culturas viajando.
-              </li>
-            </ul>
-          </div>
-
-          <div class="mx-auto flex flex-col gap-2">
-            <img
-              class="w-50 rounded-full"
-              src="./assets/Panko_Marta.png"
-              alt="Panko y yo en Copenhague"
-            />
-            <p class="mx-auto text-center text-xs">Panko y yo en Copenhague</p>
-          </div>
-        </article>
+        <div class="mx-auto flex flex-col gap-2 pb-5">
+          <img
+            class="w-50 rounded-full border-2 border-[#AE92B7]/70 "
+            src="./assets/Panko_Marta.png"
+            alt="Panko y yo en Copenhague"
+          />
+          <p class="mx-auto text-center text-xs">Panko y yo en Copenhague</p>
+        </div>
       </article>
     </section>
 
     <!-- REVIEWS SECTION -->
 
-    <section id="reviews">
-      <div class="mx-auto max-w-72 sm:max-w-screen-sm lg:max-w-screen-lg">
-        <h3 class="text-left text-3xl font-black">Reseñas</h3>
+    <section
+      id="reviews"
+      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-[#AE92B7] py-5"
+    >
+      <div class="mx-auto max-w-80 sm:max-w-screen-sm lg:max-w-screen-lg">
+        <h3
+          class="flex flex-row items-center gap-1 text-left text-3xl font-semibold"
+        >
+          <img
+            class="h-10 w-10"
+            src="./assets/reviews_icon.svg"
+            alt="Icono de proyectos"
+          />Reseñas
+        </h3>
         <ul>
           <template data-template="review-card">
             <li
-              class="mt-5 flex flex-col gap-4 overflow-hidden rounded-xl bg-[#d8eca8] p-4 sm:flex-row"
+              class="mt-5 flex flex-col gap-4 overflow-hidden rounded-xl bg-white/50 p-4 sm:flex-row"
             >
-              <img class="mx-auto size-28 rounded-full sm:mx-0" src="" alt="" />
+              <img
+                class="mx-auto size-28 rounded-full border-2 border-[#AE92B7]/70 object-cover shadow-md sm:mx-0"
+                src=""
+                alt=""
+              />
               <div>
                 <blockquote class="mb-4 italic"></blockquote>
-                <p></p>
+                <p class="font-medium"></p>
               </div>
             </li>
           </template>
