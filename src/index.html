@@ -7,6 +7,7 @@
   </head>
   <body
     class="font-montserrat min-h-screen w-full overflow-x-hidden text-gray-950"
+    style="overflow-x: hidden; max-width: 100vw"
   >
     <!-- NAVBAR-->
     <header id="header" class="sticky top-0 z-50 mx-auto h-16 w-full">
@@ -42,7 +43,7 @@
             class="absolute top-0 hidden h-dvh w-9/12 flex-col gap-10 bg-[#d8eca8] px-20 py-10 text-2xl font-medium sm:static sm:flex sm:h-auto sm:w-5/11 sm:flex-row sm:items-center sm:justify-between sm:bg-transparent sm:p-0 sm:text-left sm:text-sm"
           >
             <li class="mx-auto text-2xl font-medium sm:mx-0 sm:hidden">
-              &lt Marta Gómez /<span class="-ml-1 inline-block">&gt;</span>
+              Marta Gómez
             </li>
 
             <li><a href="#projects">Proyectos</a></li>
@@ -73,10 +74,10 @@
     <!-- HERO SECTION -->
     <section
       id="hero"
-      class="min-h-[calc(100dvh-4rem)] scroll-mt-16 bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
+      class="flex min-h-[calc(100dvh-4rem)] scroll-mt-16 items-end bg-gradient-to-b from-[#d8eca8] to-[#AE92B7]"
     >
       <article
-        class="mx-auto flex max-w-80 flex-wrap items-center justify-center gap-3 sm:max-w-screen-sm lg:max-w-screen-lg"
+        class="mx-auto flex w-full max-w-80 flex-wrap items-center justify-center gap-3 pb-36 sm:max-w-screen-sm lg:max-w-screen-lg"
       >
         <img
           class="mx-auto mt-20 max-w-32 rounded-full"
@@ -94,7 +95,7 @@
           <ul class="mx-auto flex flex-col gap-3 sm:mx-0 sm:flex-row">
             <li class="mx-auto">
               <button
-                class="flex h-fit flex-row items-center justify-center rounded-full bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
               >
                 <a
                   class="mx-auto flex items-center gap-1 text-sm"
@@ -112,7 +113,7 @@
             </li>
             <li class="mx-auto">
               <button
-                class="flex h-fit flex-row items-center justify-center rounded-full bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
               >
                 <a
                   class="mx-auto flex items-center gap-1 text-sm"
@@ -131,7 +132,7 @@
             </li>
             <li class="mx-auto py-0.5">
               <button
-                class="flex h-fit flex-row items-center justify-center rounded-full bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
               >
                 <a
                   class="mx-auto flex items-center gap-1 text-sm"
@@ -151,7 +152,7 @@
           </ul>
         </div>
         <button
-          class="mx-auto items-center scroll-smooth rounded-full bg-white/20 px-1.5 pt-1.5 pb-1 shadow-sm"
+          class="absolute bottom-10 mx-auto items-center scroll-smooth rounded-full bg-white/20 px-1.5 pt-1.5 pb-1 shadow-sm"
         >
           <a href="#projects">
             <img
@@ -181,9 +182,7 @@
 
         <ul class="flex flex-wrap justify-between gap-10 py-5">
           <template data-template="project-card">
-            <li
-              class="h-120 w-full overflow-hidden rounded-2xl bg-[#bcce92] p-2"
-            >
+            <li class="h-120 w-full overflow-hidden rounded-2xl p-2  bg-[#E8F5D0] shadow-lg shadow-[#AE92B7]/20 border-2 border-[#AE92B7]/30 ">
               <img class="h-1/3 w-full rounded-xl object-cover" src="" alt="" />
               <div class="flex h-2/3 flex-col p-2.5">
                 <h4 class="text-lg font-medium"></h4>
@@ -197,7 +196,7 @@
                 <ul class="flex flex-row">
                   <li class="mx-auto">
                     <button
-                      class="flex h-fit flex-row items-center justify-center rounded-full bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                      class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
                     >
                       <a
                         class="mx-auto flex items-center gap-1 text-sm"
@@ -214,9 +213,9 @@
                       </a>
                     </button>
                   </li>
-                   <li class="mx-auto">
+                  <li class="mx-auto">
                     <button
-                      class="flex h-fit flex-row items-center justify-center rounded-full bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
+                      class="flex h-fit flex-row items-center justify-center rounded-full border-1 border-[#a388ac] bg-[#AE92B7] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#b89acd] focus:bg-[#9870a3] focus:text-white"
                     >
                       <a
                         class="mx-auto flex items-center gap-1 text-sm"
