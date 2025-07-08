@@ -204,6 +204,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
+  }
   .right-20 {
     right: calc(var(--spacing) * 20);
   }
@@ -256,6 +259,9 @@
     width: calc(var(--spacing) * 28);
     height: calc(var(--spacing) * 28);
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-2\/5 {
     height: calc(2/5 * 100%);
   }
@@ -267,6 +273,12 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -416,6 +428,15 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-\[\#101D40\]\/70 {
+    border-color: color-mix(in oklab, #101D40 70%, transparent);
+  }
+  .border-\[\#424E35\]\/70 {
+    border-color: color-mix(in oklab, #424E35 70%, transparent);
+  }
+  .border-\[\#7990B9\]\/70 {
+    border-color: color-mix(in oklab, #7990B9 70%, transparent);
+  }
   .border-\[\#712908\] {
     border-color: #712908;
   }
@@ -424,6 +445,21 @@
   }
   .border-\[\#a388ac\] {
     border-color: #a388ac;
+  }
+  .bg-\[\#\#8BA2C8\] {
+    background-color: ##8BA2C8;
+  }
+  .bg-\[\#\#101D40\] {
+    background-color: ##101D40;
+  }
+  .bg-\[\#0e203c\] {
+    background-color: #0e203c;
+  }
+  .bg-\[\#8BA2C8\] {
+    background-color: #8BA2C8;
+  }
+  .bg-\[\#101D40\] {
+    background-color: #101D40;
   }
   .bg-\[\#424E35\] {
     background-color: #424E35;
@@ -445,6 +481,9 @@
   }
   .bg-\[\#AE92B7\] {
     background-color: #AE92B7;
+  }
+  .bg-\[\#B1C0D2\] {
+    background-color: #B1C0D2;
   }
   .bg-\[\#B1C1D2\] {
     background-color: #B1C1D2;
@@ -494,6 +533,9 @@
   }
   .bg-\[url\(\'\.\/assets\/revi-bg\.png\'\)\] {
     background-image: url('./assets/revi-bg.png');
+  }
+  .bg-\[url\(\'\.\/assets\/reviews-bg\.jpg\'\)\] {
+    background-image: url('./assets/reviews-bg.jpg');
   }
   .bg-\[url\(\'\.\/assets\/reviews-bg\.png\'\)\] {
     background-image: url('./assets/reviews-bg.png');
@@ -659,6 +701,9 @@
   .text-\[\#2a2a2a\] {
     color: #2a2a2a;
   }
+  .text-\[\#424E35\] {
+    color: #424E35;
+  }
   .text-\[\#42452F\] {
     color: #42452F;
   }
@@ -670,6 +715,12 @@
   }
   .text-\[\#EDD6C5\] {
     color: #EDD6C5;
+  }
+  .text-\[\#f6ece5\] {
+    color: #f6ece5;
+  }
+  .text-\[\#f6eee9\] {
+    color: #f6eee9;
   }
   .italic {
     font-style: italic;
@@ -716,6 +767,132 @@
       }
     }
   }
+  .hover\:bg-\[\#3e1f1a\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #3e1f1a;
+      }
+    }
+  }
+  .hover\:bg-\[\#3e251a\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #3e251a;
+      }
+    }
+  }
+  .hover\:bg-\[\#7d4d4d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7d4d4d;
+      }
+    }
+  }
+  .hover\:bg-\[\#7d534d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7d534d;
+      }
+    }
+  }
+  .hover\:bg-\[\#8BA2C8\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #8BA2C8;
+      }
+    }
+  }
+  .hover\:bg-\[\#96b0cb\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #96b0cb;
+      }
+    }
+  }
+  .hover\:bg-\[\#723c3c\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #723c3c;
+      }
+    }
+  }
+  .hover\:bg-\[\#832E0B\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #832E0B;
+      }
+    }
+  }
+  .hover\:bg-\[\#859eb8\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #859eb8;
+      }
+    }
+  }
+  .hover\:bg-\[\#8799ac\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #8799ac;
+      }
+    }
+  }
+  .hover\:bg-\[\#48352d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #48352d;
+      }
+    }
+  }
+  .hover\:bg-\[\#66605d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #66605d;
+      }
+    }
+  }
+  .hover\:bg-\[\#592107\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #592107;
+      }
+    }
+  }
+  .hover\:bg-\[\#593939\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #593939;
+      }
+    }
+  }
+  .hover\:bg-\[\#710808\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #710808;
+      }
+    }
+  }
+  .hover\:bg-\[\#712908\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #712908;
+      }
+    }
+  }
+  .hover\:bg-\[\#752401\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #752401;
+      }
+    }
+  }
+  .hover\:bg-\[\#B1C1D2\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #B1C1D2;
+      }
+    }
+  }
   .hover\:bg-\[\#b89acd\] {
     &:hover {
       @media (hover: hover) {
@@ -723,9 +900,40 @@
       }
     }
   }
+  .hover\:text-\[\#832E0B\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #832E0B;
+      }
+    }
+  }
+  .hover\:text-\[\#f6eee9\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #f6eee9;
+      }
+    }
+  }
+  .hover\:text-\[\[\#424E35\]\] {
+    &:hover {
+      @media (hover: hover) {
+        color: [#424E35];
+      }
+    }
+  }
+  .focus\:bg-\[\#8BA2C8\] {
+    &:focus {
+      background-color: #8BA2C8;
+    }
+  }
   .focus\:bg-\[\#9870a3\] {
     &:focus {
       background-color: #9870a3;
+    }
+  }
+  .focus\:bg-\[\#b8cef0\] {
+    &:focus {
+      background-color: #b8cef0;
     }
   }
   .focus\:text-white {
@@ -761,6 +969,11 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
+    }
+  }
+  .sm\:h-5 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 5);
     }
   }
   .sm\:h-30 {
@@ -853,6 +1066,11 @@
   .sm\:bg-\[url\(\'\.\/assets\/reviews\'\)\] {
     @media (width >= 40rem) {
       background-image: url('./assets/reviews');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\/assets\/reviews-bg-sm\.png\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('./assets/reviews-bg-sm.png');
     }
   }
   .sm\:bg-\[url\(\'\.\/assets\/reviews-bg\.png\'\)\] {
