@@ -1,9 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Akira";
+  src: url("./assets/Akira Expanded Demo.otf") format("opentype");
+}
+@font-face {
+  font-family: "LEMONMILK-Bold";
+  src: url("./assets/LEMONMILK-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "LEMONMILK-Medium";
+  src: url("./assets/LEMONMILK-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "LEMONMILK-Regular";
+  src: url("./assets/LEMONMILK-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/Coolvetica\ Rg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Stretch";
+  src: url("./assets/StretchPro.otf") format("opentype");
+}
+
 @theme {
   --font-jetbrains: "JetBrains Mono", "sans Serif";
   --font-montserrat: "Montserrat", "sans Serif";
+  --font-akira: "Akira", sans-serif;
+  --font-lemon-bold: "LEMONMILK-Bold", sans-serif;
+  --font-lemon-medium: "LEMONMILK-Medium", sans-serif;
+  --font-lemon-regular: "LEMONMILK-Regular", sans-serif;
+  --font-coolvetica: "Coolvetica", sans-serif;
+    --font-stretch: "Stretch", sans-serif;
 
   --animate-slide-in: slide-in 0.5s ease-in-out;
   --animate-slide-out: slide-out 0.5s ease-in-out;
