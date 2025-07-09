@@ -15,7 +15,7 @@ export const projects = [
   {
     title: "Routify",
     image: {
-      src: "./assets/Routify.jpeg",
+      src: "./assets/Routify.png",
       alt: "Imagen de Routify",
     },
     description:

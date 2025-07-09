@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Akira";
+  src: url("./assets/Akira Expanded Demo.otf") format("opentype");
+}
+
+
 @theme {
   --font-jetbrains: "JetBrains Mono", "sans Serif";
   --font-montserrat: "Montserrat", "sans Serif";
+  --font-akira: "Akira", sans-serif;
 
   --animate-slide-in: slide-in 0.5s ease-in-out;
   --animate-slide-out: slide-out 0.5s ease-in-out;
