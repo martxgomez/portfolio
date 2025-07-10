@@ -12,8 +12,6 @@
   --font-montserrat: "Montserrat", "sans Serif";
   --font-akira: "Akira", sans-serif;
 
-   --text-semilarge: 2.7rem; 
-
   --animate-slide-in: slide-in 0.5s ease-in-out;
   --animate-slide-out: slide-out 0.5s ease-in-out;
 }
