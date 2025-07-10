@@ -32,7 +32,7 @@ export const projects = [
       alt: "Imagen de Barcelona's Experience",
     },
     description:
-      "Se trata de mi primer videojuego, en el que te pondrás en la piel de una oficinista que tiene que llegar al trabajo en metro, pero... ¡CUIDADO! El metro de Barcelona esconde desafíos y sorpresas ¿Serás capaz de esquivar los peligros y llegar a tiempo? ⏳ \n\nEl objetivo era desarrollar un juego renderizado en el navegador con lógica de victoria/derrota, feedback al jugador y una estructura organizada siguiendo principios de programación orientada a objetos (OOP) y buenas prácticas (KISS, DRY).",
+      "Se trata de mi primer videojuego, en el que te pondrás en la piel de una oficinista que tiene que llegar al trabajo en metro, pero... ¡CUIDADO! El metro de Barcelona esconde desafíos y sorpresas ¿Serás capaz de esquivar los peligros y llegar a tiempo? ⏳ \n\nEl objetivo era desarrollar un juego renderizado en el navegador con lógica de victoria/derrota, feedback al jugador y una estructura organizada siguiendo principios de programación orientada a objetos (OOP) y buenas prácticas (KISS, DRY). Optimizado para experiencia en escritorio.",
     link: "https://github.com/martxgomez/Barcelona-experience",
     web: "https://martxgomez.github.io/Barcelona-experience/",
     tech: "HTML5 | Javascript | CSS | DOM | OOP",
