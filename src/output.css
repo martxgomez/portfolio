@@ -200,14 +200,62 @@
   .sticky {
     position: sticky;
   }
+  .-top-0 {
+    top: calc(var(--spacing) * -0);
+  }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
+  .-top-3 {
+    top: calc(var(--spacing) * -3);
+  }
+  .-top-5 {
+    top: calc(var(--spacing) * -5);
+  }
+  .-top-\[0\.0em\] {
+    top: calc(0.0em * -1);
+  }
+  .-top-\[0\.1em\] {
+    top: calc(0.1em * -1);
+  }
+  .-top-\[0\.2em\] {
+    top: calc(0.2em * -1);
+  }
+  .-top-\[0\.05em\] {
+    top: calc(0.05em * -1);
+  }
+  .-top-\[0\.5em\] {
+    top: calc(0.5em * -1);
+  }
+  .-top-\[0\.08em\] {
+    top: calc(0.08em * -1);
+  }
+  .-top-\[0\.15em\] {
+    top: calc(0.15em * -1);
+  }
+  .-top-\[0\.25em\] {
+    top: calc(0.25em * -1);
+  }
+  .-top-\[0\.35em\] {
+    top: calc(0.35em * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .top-full {
+    top: 100%;
   }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
+  .-bottom-3 {
+    bottom: calc(var(--spacing) * -3);
+  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
@@ -223,6 +271,9 @@
   }
   .-mt-16 {
     margin-top: calc(var(--spacing) * -16);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -317,6 +368,17 @@
   }
   .max-w-screen-sm {
     max-width: var(--breakpoint-sm);
+  }
+  .origin-center {
+    transform-origin: center;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-x-200 {
+    --tw-scale-x: 200%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .rotate-180 {
     rotate: 180deg;
@@ -452,14 +514,17 @@
       background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
   }
-  .bg-\[url\(\'\.\/assets\/aboutme-bg\.png\'\)\] {
-    background-image: url('./assets/aboutme-bg.png');
+  .bg-\[url\(\'\.\/assets\/bg\/about-me-bg\.jpg\'\)\] {
+    background-image: url('./assets/bg/about-me-bg.jpg');
   }
-  .bg-\[url\(\'\.\/assets\/projects-bg\.png\'\)\] {
-    background-image: url('./assets/projects-bg.png');
+  .bg-\[url\(\'\.\/assets\/bg\/hero-bg\.jpg\'\)\] {
+    background-image: url('./assets/bg/hero-bg.jpg');
   }
-  .bg-\[url\(\'\.\/assets\/reviews-bg\.png\'\)\] {
-    background-image: url('./assets/reviews-bg.png');
+  .bg-\[url\(\'\.\/assets\/bg\/projects-bg\.jpg\'\)\] {
+    background-image: url('./assets/bg/projects-bg.jpg');
+  }
+  .bg-\[url\(\'\.\/assets\/bg\/reviews-bg\.jpg\'\)\] {
+    background-image: url('./assets/bg/reviews-bg.jpg');
   }
   .bg-contain {
     background-size: contain;
@@ -520,6 +585,9 @@
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
@@ -655,6 +723,11 @@
       position: static;
     }
   }
+  .sm\:-top-4 {
+    @media (width >= 40rem) {
+      top: calc(var(--spacing) * -4);
+    }
+  }
   .sm\:m-0 {
     @media (width >= 40rem) {
       margin: calc(var(--spacing) * 0);
@@ -720,19 +793,29 @@
       justify-content: flex-start;
     }
   }
+  .sm\:gap-10 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .sm\:bg-transparent {
     @media (width >= 40rem) {
       background-color: transparent;
     }
   }
-  .sm\:bg-\[url\(\'\.\/assets\/projects-bg-sm\.png\'\)\] {
+  .sm\:bg-\[url\(\'\.\/assets\/bg\/about-me-bg-sm\.jpg\'\)\] {
     @media (width >= 40rem) {
-      background-image: url('./assets/projects-bg-sm.png');
+      background-image: url('./assets/bg/about-me-bg-sm.jpg');
     }
   }
-  .sm\:bg-\[url\(\'\.\/assets\/reviews-bg-sm\.png\'\)\] {
+  .sm\:bg-\[url\(\'\.\/assets\/bg\/projects-bg-sm\.jpg\'\)\] {
     @media (width >= 40rem) {
-      background-image: url('./assets/reviews-bg-sm.png');
+      background-image: url('./assets/bg/projects-bg-sm.jpg');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\/assets\/bg\/reviews-bg-sm\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('./assets/bg/reviews-bg-sm.jpg');
     }
   }
   .sm\:p-0 {
@@ -762,6 +845,11 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+  .sm\:text-\[1rem\] {
+    @media (width >= 40rem) {
+      font-size: 1rem;
+    }
+  }
   .lg\:max-w-screen-sm {
     @media (width >= 64rem) {
       max-width: var(--breakpoint-sm);
@@ -770,7 +858,7 @@
 }
 @font-face {
   font-family: "Akira";
-  src: url("./assets/Akira Expanded Demo.otf") format("opentype");
+  src: url("./assets/fonts/Akira Expanded Demo.otf") format("opentype");
 }
 @keyframes slide-in {
   0% {
@@ -787,6 +875,36 @@
   100% {
     transform: translateX(-100%);
   }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -902,24 +1020,15 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
@@ -946,9 +1055,6 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
     }
   }
 }

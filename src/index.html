@@ -41,17 +41,27 @@
         >
           <h1
             id="main-title"
-            class="mx-auto cursor-pointer text-2xl font-semibold sm:m-0"
+            class="font-akira mx-auto cursor-pointer text-xl font-semibold sm:m-0"
           >
-            Marta Gómez
+            Marta G<span class="relative inline-block"
+              >o<span
+                class="absolute -top-[0.05em] left-1/2 -translate-x-1/2 scale-x-200 text-sm sm:text-[1rem]"
+                >´</span
+              ></span
+            >mez
           </h1>
 
           <ul
             id="nav-menu"
-            class="absolute top-0 hidden h-dvh w-9/10 flex-col gap-10 bg-[#8BA2C8] px-15 py-10 text-xl font-medium sm:static sm:flex sm:h-fit sm:w-fit sm:flex-row sm:bg-transparent sm:p-0 sm:text-sm"
+            class="absolute top-0 hidden h-dvh w-full flex-col gap-10 bg-[#8BA2C8] px-15 py-10 text-xl font-medium sm:static sm:flex sm:h-fit sm:w-fit sm:flex-row sm:bg-transparent sm:p-0 sm:text-sm"
           >
-            <li class="mx-auto text-2xl font-semibold sm:mx-0 sm:hidden">
-              Marta Gómez
+            <li class="mx-auto font-akira text-2xl font-semibold sm:mx-0 sm:hidden">
+              Marta <br> G<span class="relative inline-block"
+              >o<span
+                class="absolute -top-[0.05em] left-1/2 -translate-x-1/2 scale-x-200 text-sm sm:text-[1rem]"
+                >´</span
+              ></span
+            >mez
             </li>
             <span></span>
             <li class=""><a href="#projects">Proyectos</a></li>
@@ -85,15 +95,14 @@
     <!-- HERO SECTION -->
     <section
       id="hero"
-      class="-mt-16 flex min-h-dvh w-full items-end justify-center bg-cover pt-16"
-      style="background-image: url(./assets/hero-bg.png)"
+      class="-mt-16 flex min-h-dvh w-full items-end justify-center bg-[url('./assets/bg/hero-bg.jpg')] bg-cover pt-16"
     >
       <article
         class="mx-auto flex w-full max-w-80 flex-wrap items-center justify-center gap-3 pb-36 sm:max-w-screen-sm sm:justify-start lg:max-w-screen-sm"
       >
         <img
           class="mt-20 max-w-32 items-center rounded-full sm:mx-0"
-          src="./assets/Marta.png"
+          src="./assets/people/marta.jpg"
           alt="Imagen de perfil de Marta"
         />
         <div class="my-2 flex flex-col gap-3 sm:items-start">
@@ -117,7 +126,7 @@
                 >
                   LinkedIn
                   <img
-                    src="./assets/linkedin-icon.svg"
+                    src="./assets/icons/linkedin-icon.svg"
                     alt="Logo de LinkedIn"
                     class="h-6 w-6"
                   />
@@ -136,7 +145,7 @@
                   GitHub
 
                   <img
-                    src="./assets/github-icon.svg"
+                    src="./assets/icons/github-icon.svg"
                     alt="Logo de GitHub"
                     class="h-6 w-6"
                   />
@@ -154,7 +163,7 @@
                 >
                   Email
                   <img
-                    src="./assets/mail-icon.svg"
+                    src="./assets/icons/mail-icon.svg"
                     alt="Logo de GitHub"
                     class="h-6 w-6"
                   />
@@ -169,7 +178,7 @@
       >
         <a href="#projects">
           <img
-            src="./assets/down-arrow-icon.svg"
+            src="./assets/icons/down-arrow-icon.svg"
             alt="Logo de GitHub"
             class="h-6 w-6"
         /></a>
@@ -179,7 +188,7 @@
     <!-- PROJECTS -->
     <section
       id="projects"
-      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/projects-bg.png')] bg-contain sm:bg-[url('./assets/projects-bg-sm.png')]"
+      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/bg/projects-bg.jpg')] bg-contain sm:bg-[url('./assets/bg/projects-bg-sm.jpg')]"
     >
       <div
         class="flex h-56 w-full items-end bg-[#832E0B] text-[#f6eee9] sm:h-40"
@@ -188,11 +197,6 @@
           <h3
             class="font-akira flex flex-row items-center gap-1 p-0.5 text-left text-4xl text-[#f6eee9] sm:text-5xl"
           >
-            <!-- <img
-              class="h-20 w-20"
-              src="./assets/projects_icon.svg"
-              alt="Icono de proyectos"
-            /> -->
             PROYECTOS
           </h3>
         </div>
@@ -208,7 +212,7 @@
             >
               <img class="h-2/5 w-full rounded-xl object-cover" src="" alt="" />
               <div class="flex h-3/5 flex-col p-2.5">
-                <h4 class="text-lg font-medium"></h4>
+                <h4 class="font-akira text-lg font-medium"></h4>
                 <h5 class="pb-2.5 text-sm font-normal"></h5>
                 <p></p>
 
@@ -229,7 +233,7 @@
                         Ver repo
 
                         <img
-                          src="./assets/visit_github-icon.svg"
+                          src="./assets/icons/visit_github-icon.svg"
                           alt="Logo de GitHub"
                           class="h-6 w-6"
                         />
@@ -248,7 +252,7 @@
                         Ver proyecto
 
                         <img
-                          src="./assets/visit_project_icon.svg"
+                          src="./assets/icons/visit_project_icon.svg"
                           alt="Logo de GitHub"
                           class="h-6 w-6"
                         />
@@ -266,7 +270,7 @@
     <!-- ABOUT ME -->
     <section
       id="about-me"
-      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/aboutme-bg.png')] bg-cover bg-center"
+      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/bg/about-me-bg.jpg')] bg-cover bg-center sm:bg-[url('./assets/bg/about-me-bg-sm.jpg')]"
     >
       <div
         class="flex h-56 w-full items-end bg-[#424E35] text-[#f6eee9] sm:h-40"
@@ -275,11 +279,6 @@
           <h3
             class="font-akira flex flex-row items-center gap-1 p-0.5 text-left text-4xl text-[#f6eee9] sm:text-5xl"
           >
-            <!-- <img
-              class="h-20 w-20"
-              src="./assets/aboutme_icon.svg"
-              alt="Icono de sobre mí"
-            /> -->
             SOBRE MI
           </h3>
         </div>
@@ -289,22 +288,22 @@
       >
         <article class="flex flex-col gap-5 sm:flex-row">
           <div class="flex flex-col gap-10">
-            <div class="grid grid-cols-3 justify-between gap-10">
+            <div class="mx-auto grid grid-cols-3 gap-4 sm:gap-10">
               <div
                 class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
               >
-                <img src="./assets/olives.jpg" alt="Imagen de aceitunas" />
+                <img src="./assets/info/olives.jpg" alt="Imagen de aceitunas" />
               </div>
               <div
                 class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
               >
-                <img src="./assets/cadiz.jpg" alt="Imagen de Cádiz" />
+                <img src="./assets/info/cadiz.jpg" alt="Imagen de Cádiz" />
               </div>
               <div
                 class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
               >
                 <img
-                  src="./assets/orange-trees.jpeg"
+                  src="./assets/info/orange-trees.jpg"
                   alt="Imagen de naranjos"
                 />
               </div>
@@ -336,66 +335,40 @@
               naturaleza, viajo con mi perro y comparto momentos que combinan
               pasión y precisión.
             </p>
+
+            <div class="mx-auto grid grid-cols-3 gap-4 pb-10 sm:gap-10">
+              <div
+                class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
+              >
+                <img
+                  src="./assets/info/marta-art.jpg"
+                  alt="Imagen de Marta viendo arte"
+                />
+              </div>
+              <div
+                class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
+              >
+                <img src="./assets/info/sea.jpg" alt="Imagen del mar" />
+              </div>
+              <div
+                class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
+              >
+                <img
+                  src="./assets/info/marta-panko.jpg"
+                  alt="Imagen de Panko y Marta en Copenhague"
+                />
+              </div>
+            </div>
           </div>
         </article>
-        <div class="grid grid-cols-3 justify-between gap-10 py-10">
-          <div
-            class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
-          >
-            <img
-              src="./assets/marta_art.jpg"
-              alt="Imagen de Marta viendo arte"
-            />
-          </div>
-          <div
-            class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
-          >
-            <img src="./assets/sea.jpg" alt="Imagen del mar" />
-          </div>
-          <div
-            class="flex aspect-square h-24 items-center justify-center overflow-hidden sm:h-auto"
-          >
-            <img
-              src="./assets/Panko_Marta.png"
-              alt="Imagen de Panko y Marta en Copenhague"
-            />
-          </div>
-        </div>
       </article>
-
-      <!-- SKILLS
-           <article class="flex flex-col gap-5">
-          <div class="flex flex-col gap-4">
-            <h4 class="font-bold">🧠 Habilidades</h4>
-            <ul>
-              <li>▪️ Desarrollo Full Stack (Frontend y Backend)</li>
-              <li>▪️ Desarrollo centrado en el usuario</li>
-              <li>▪️ Resolución de problemas y optimización de procesos</li>
-              <li>▪️ Metodologías ágiles</li>
-              <li>▪️ Pensamiento creativo y crítico</li>
-              <li>▪️ Trabajo en equipo y gestión de proyectos</li>
-            </ul>
-          </div> -->
-      <!-- <div class="flex flex-col gap-2">
-            <h4 class="font-bold">🚀 Tecnologías</h4>
-
-            <p>
-              📌 JavaScript (ES6+), Node.js, React.js, Express.js, MongoDB,
-              HTML, CSS, Vite
-            </p>
-          </div>
-          <div class="flex flex-col gap-4">
-            <h4 class="font-bold">⚙️ Herramientas</h4>
-            <p>📌 Git, GitHub, Cypress, Jasmine, Netlify, Vercel</p>
-          </div>
-        </article> -->
     </section>
 
     <!-- REVIEWS SECTION -->
 
     <section
       id="reviews"
-      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/reviews-bg.png')] bg-cover bg-center pb-20 sm:bg-[url('./assets/reviews-bg-sm.png')]"
+      class="-mb-px min-h-[calc(100dvh-4rem)] w-full scroll-mt-16 bg-[url('./assets/bg/reviews-bg.jpg')] bg-cover bg-center pb-20 sm:bg-[url('./assets/bg/reviews-bg-sm.jpg')]"
     >
       <div
         class="flex h-56 w-full items-end bg-[#153059] text-[#f6eee9] sm:h-40"
@@ -404,12 +377,12 @@
           <h3
             class="font-akira flex flex-row items-center gap-1 p-0.5 text-left text-4xl text-[#f6eee9] sm:text-5xl"
           >
-            <!-- <img
-              class="h-20 w-20"
-              src="./assets/reviews_icon.svg"
-              alt="Icono de reseñas"
-            /> -->
-            RESEÑAS
+            RESE<span class="relative"
+              >N<span
+                class="absolute -top-3 left-1/2 origin-center -translate-x-1/2 scale-x-200 text-sm sm:-top-4 sm:text-[1rem]"
+                >_</span
+              ></span
+            >AS
           </h3>
         </div>
       </div>
@@ -438,7 +411,10 @@
       <div
         class="mx-auto max-w-80 pt-10 sm:max-w-screen-sm sm:pt-10 lg:max-w-screen-sm"
       >
-        <ul class="mx-auto flex flex-col gap-3 sm:mx-0 sm:flex-row">
+        <ul
+          class="mx-auto flex flex-col gap-3 sm:mx-0 sm:flex-row"
+          id="contact"
+        >
           <li class="mx-auto">
             <button
               class="flex h-fit flex-row items-center justify-center rounded-full bg-[#B1C1D2] p-3 shadow-sm transition-colors duration-300 hover:scale-105 hover:bg-[#8BA2C8]"
@@ -450,7 +426,7 @@
               >
                 LinkedIn
                 <img
-                  src="./assets/linkedin-icon.svg"
+                  src="./assets/icons/linkedin-icon.svg"
                   alt="Logo de LinkedIn"
                   class="h-6 w-6"
                 />
@@ -469,7 +445,7 @@
                 GitHub
 
                 <img
-                  src="./assets/github-icon.svg"
+                  src="./assets/icons/github-icon.svg"
                   alt="Logo de GitHub"
                   class="h-6 w-6"
                 />
@@ -487,7 +463,7 @@
               >
                 Email
                 <img
-                  src="./assets/mail-icon.svg"
+                  src="./assets/icons/mail-icon.svg"
                   alt="Logo de GitHub"
                   class="h-6 w-6"
                 />

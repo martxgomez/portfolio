@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Nexo",
     image: {
-      src: "./assets/Nexo.png",
+      src: "./assets/projects/nexo.jpg",
       alt: "Imagen de Nexo",
     },
     description:
@@ -15,7 +15,7 @@ export const projects = [
   {
     title: "Routify",
     image: {
-      src: "./assets/Routify.png",
+      src: "./assets/projects/routify.jpg",
       alt: "Imagen de Routify",
     },
     description:
@@ -28,7 +28,7 @@ export const projects = [
   {
     title: "Barcelona's Experience",
     image: {
-      src: "./assets/Barcelonas_experience.png",
+      src: "./assets/projects/bcn-experience.jpg",
       alt: "Imagen de Barcelona's Experience",
     },
     description:
@@ -44,7 +44,7 @@ export const reviews = [
   {
     name: "Tomas Martin",
     image: {
-      src: "./assets/Tomas.jpeg",
+      src: "./assets/people/tomas.jpg",
       alt: "Imagen de Tomas",
     },
     reviewText:
@@ -53,7 +53,7 @@ export const reviews = [
   {
     name: "Èric Masip",
     image: {
-      src: "./assets/Eric.jpeg",
+      src: "./assets/people/eric.jpg",
       alt: "Imagen de Èric",
     },
     reviewText:
@@ -62,7 +62,7 @@ export const reviews = [
   {
     name: "Roxana Ferramola",
     image: {
-      src: "./assets/Roxana.jpeg",
+      src: "./assets/people/roxana.jpg",
       alt: "Imagen de Roxana",
     },
     reviewText:
@@ -71,7 +71,7 @@ export const reviews = [
   {
     name: "Marcel Bosch",
     image: {
-      src: "./assets/Marcel.jpeg",
+      src: "./assets/people/marcel.jpg",
       alt: "Imagen de Marcel",
     },
     reviewText:
