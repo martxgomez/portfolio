@@ -6,7 +6,7 @@ export const projects = [
       alt: "Imagen de Nexo",
     },
     description:
-      "Nexo está diseñada para ayudarte a crear, organizar y compartir planes con amigos ¿Quieres organizar una salida, una cena o cualquier otro evento? Con Nexo puedes crear planes personalizados, invitar amigos y decidir si quieres que sean públicos o privados 🔐 \n\n Nexo fue mi primera aplicación full-stack con un frontend en React (SPA) y un backend en ExpressJS con MongoDB, cumpliendo con todos los requisitos técnicos solicitados. La aplicación incluye autenticación de usuarios, operaciones CRUD, múltiples modelos de base de datos y un diseño mobile-first. Nota: La base de datos Supabase puede pausarse por inactividad. En ese caso, puede que la aplicación no esté disponible hasta que sea reactivada manualmente.",
+      "Nexo está diseñada para ayudarte a crear, organizar y compartir planes con amigos ¿Quieres organizar una salida, una cena o cualquier otro evento? Con Nexo puedes crear planes personalizados, invitar amigos y decidir si quieres que sean públicos o privados 🔐 \n\n Nexo fue mi primera aplicación full-stack con un frontend en React (SPA) y un backend en ExpressJS con MongoDB, cumpliendo con todos los requisitos técnicos solicitados. La aplicación incluye autenticación de usuarios, operaciones CRUD, múltiples modelos de base de datos y un diseño mobile-first.",
     link: "https://github.com/martxgomez/project-3-client",
     web: "https://nexo-plans.netlify.app/#/",
     tech: "React | REST API | ExpressJS | MongoDB | NodeJS",
@@ -19,7 +19,7 @@ export const projects = [
       alt: "Imagen de Routify",
     },
     description:
-      "Routify ayuda a los usuarios a descubrir planes de viaje, filtrarlos según sus intereses y guardar sus favoritos en su perfil personal. Además, permite a los usuarios crear y gestionar sus propios planes de viaje ✈️ \n\nSe trata de una Single Page Application (SPA) con React que consume una API con Supabase para realizar operaciones CRUD. La aplicación está desplegada en línea a través de Netlify, es accesible públicamente y cuenta con múltiples vistas para una experiencia de usuario interactiva. Optimizado para experiencia en escritorio. ",
+      "Routify ayuda a los usuarios a descubrir planes de viaje, filtrarlos según sus intereses y guardar sus favoritos en su perfil personal. Además, permite a los usuarios crear y gestionar sus propios planes de viaje ✈️ \n\nSe trata de una Single Page Application (SPA) con React que consume una API con Supabase para realizar operaciones CRUD. La aplicación está desplegada en línea a través de Netlify, es accesible públicamente y cuenta con múltiples vistas para una experiencia de usuario interactiva. Optimizado para experiencia en escritorio. Nota: La base de datos Supabase puede pausarse por inactividad. En ese caso, puede que la aplicación no esté disponible hasta que sea reactivada manualmente.",
     link: "https://github.com/martxgomez/travels-app",
     web: "https://travelers-app.netlify.app/",
     tech: "React | SQL | HTML5 | Javascript | CSS | NodeJS | ExpressJS",
