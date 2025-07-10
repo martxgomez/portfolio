@@ -764,6 +764,11 @@
       background-image: url('./assets/bg/reviews-bg-sm.jpg');
     }
   }
+  .sm\:bg-contain {
+    @media (width >= 40rem) {
+      background-size: contain;
+    }
+  }
   .sm\:p-0 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 0);
